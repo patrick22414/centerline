@@ -1,7 +1,3 @@
-//
-// Created by Songyi on 2019/11/17.
-//
-
 #include "internal.h"
 
 #include <CGAL/Partition_traits_2.h>
