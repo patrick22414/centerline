@@ -34,6 +34,8 @@ int main(int argc, const char *argv[]) {
     vector<Segment> skeletons;
     long_skeletons(part_polys, skeletons);
 
+    incident(skeletons);
+
     write_polygons(output_file, part_polys);
     write_segments("./python/skeletons.txt", skeletons);
 

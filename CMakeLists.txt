@@ -40,4 +40,4 @@ add_executable(
         src/partition.cpp
         src/straight_skeleton.cpp
         src/simplify.cpp
-)
+        src/incident.cpp)

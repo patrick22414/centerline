@@ -23,7 +23,9 @@ const Segment EMPTY_SEGMENT = Segment(ORIGIN, ORIGIN);
 void parse_polygon(const string &filename, Polygon &poly);
 
 void write_polygons(const string &filename, const vector<Polygon> &polygons);
+
 void write_segments(const string &filename, const vector<Segment> &segments);
+
 
 // simplify.cpp
 Polygon simplify_polygon(const Polygon &poly);
@@ -33,7 +35,11 @@ Polygon simplify_polygon(const Polygon &poly);
 void partition_polygon(const Polygon &poly, vector<Polygon> &part_polys);
 
 
-// staright_skeleton.cpp
+// straight_skeleton.cpp
 void long_skeletons(const vector<Polygon> &polys, vector<Segment> &skeletons);
+
+
+// incident.cpp
+void incident(const vector<Segment> &skeletons);
 
 #endif // CENTERLINE_INTERNAL_H
