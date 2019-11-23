@@ -1,17 +1,12 @@
-//
-// Created by Songyi on 2019/11/17.
-//
-
 #include "internal.h"
 
 #include <boost/shared_ptr.hpp>
 #include <CGAL/create_straight_skeleton_2.h>
 
+using namespace std;
 
 typedef CGAL::Straight_skeleton_2<Kernel> Skeleton;
 typedef boost::shared_ptr<Skeleton> SkeletonPtr;
-
-using namespace std;
 
 Segment longest_skeleton(const Polygon &poly) {
     SkeletonPtr sk_p = CGAL::create_interior_straight_skeleton_2(poly.vertices_begin(), poly.vertices_end());

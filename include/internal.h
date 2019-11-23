@@ -5,8 +5,6 @@
 #include <CGAL/Point_2.h>
 #include <CGAL/Polygon_2.h>
 
-#include <iostream>
-
 using namespace std;
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel;

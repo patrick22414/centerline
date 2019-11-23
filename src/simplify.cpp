@@ -7,7 +7,7 @@ namespace PolySimp = CGAL::Polyline_simplification_2;
 typedef PolySimp::Stop_above_cost_threshold Stop;
 typedef PolySimp::Squared_distance_cost Cost;
 
-Polygon simplify_polygon(const Polygon& poly) {
+Polygon simplify_polygon(const Polygon &poly) {
 
     Stop stop = Stop(1);
     Cost cost;
